@@ -2,15 +2,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto";
+  background-color: wheat;
 }
 header {
-  background-color: rgb(30, 207, 74);
+  background-color: burlywood;
+  margin-bottom: 20px;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 0 64px;
 }
 .menu ul {
   display: flex;
@@ -35,6 +37,14 @@ nav {
   text-decoration: none;
   border: none;
 }
+.btn-primary:hover {
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+}
 .btn-secondary {
   background-color: white;
   color: blue;
@@ -43,9 +53,43 @@ nav {
   text-decoration: none;
   border: 1px solid blue;
 }
+.btn-secondary:hover {
+  background-color: rgb(189, 15, 15);
+  color: blue;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid blue;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: red;
+}
 footer {
-  background-color: green;
+  background-color: burlywood;
+  height: 100px;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0;
 }
 .container {
-  background-color: blue;
+  width: 70%;
+  margin: auto;
 }
