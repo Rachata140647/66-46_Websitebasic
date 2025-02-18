@@ -95,6 +95,25 @@ nav ul {
 }
 .lift-side {
   width: 50%;
+  img {
+    width: 100%;
+  }
+  h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+  }
+  p {
+    font-size: 1.2rem;
+    margin: 24px 0;
+  }
+  
+  }
+.right-side {
+  width: 50%;
+  img {
+    width: 100%;
+  }
   h1 {
     color: var(--primary-color);
     font-size: 2.5rem;
@@ -105,12 +124,6 @@ nav ul {
     margin: 24px 0;
   }
 }
-.riht-side {
-  width: 50%;
-  img {
-    width: 100%;
-  }
-}
 /*solution Section*/
 .solution {
   margin-top: 50px;
@@ -119,6 +132,7 @@ nav ul {
 .solution-heading {
   text-align: center;
   margin-bottom: 24px;
+  
   p {
     font-size: 1.2rem;
     margin-bottom: 24px;
@@ -148,3 +162,16 @@ h2 {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
+/*customize*/
+.custommize{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.support{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+
+}
+
