@@ -107,8 +107,7 @@ nav ul {
     font-size: 1.2rem;
     margin: 24px 0;
   }
-  
-  }
+}
 .right-side {
   width: 50%;
   img {
@@ -162,15 +161,150 @@ h2 {
   gap: 20px;
 }
 /*customize*/
-.custommize{
+.custommize {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.support{
+.support {
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+/*footer*/
+footer {
+  background-color: var(--primary-color);
+  color: var(--base-color-white);
+  padding: 20px 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-left {
+  h3 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+  }
+}
+.footer-right {
+  display: flex;
+  gap: 40px;
 
+  ul {
+    list-style: none;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+  a {
+    text-decoration: none;
+    color: var(--base-color-white);
+  }
+  a:hover {
+    color: var(--secondary-color);
+  }
+}
+.footer-item {
+  h4 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+}
+.full-screen-menu {
+  display: none;
+}
+.hamberger-icon {
+  display: none;
+}
+/* เมนูเต็มจอ */
+.full-screen-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9); /* พื้นหลังสีดำโปร่งแสง */
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  z-index: 999;
 }
 
+.full-screen-menu ul {
+  list-style: none;
+  padding-top: 50px;
+}
+
+.full-screen-menu ul li {
+  margin: 20px 0;
+}
+
+.full-screen-menu ul li a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.full-screen-menu ul li a:hover {
+  color: var(--secondary-color);
+}
+
+/* ปุ่มปิดเมนู */
+.close-btn {
+  font-size: 32px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+/*Respornsive for Mobile*/
+@media screen and (max-width: 768px) {
+  .hamberger-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  nav {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+  .solution-content {
+    flex-direction: column;
+    .item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .custommize {
+    flex-direction: column;
+  }
+  .support {
+    flex-direction: column;
+  }
+  .discover-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-item {
+    margin: 20px;
+  }
+  .header-button {
+    display: none;
+  }
+  .footer-left {
+    padding: 20px;
+  }
+}
