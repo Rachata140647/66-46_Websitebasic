@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,102 +9,108 @@
         body {
             font-family: Verdana, Tahoma, sans-serif;
             background-color: rgb(26, 73, 2);
-            width: 600px;
-            margin: 0 auto;
             display: flex;
-            flex-direction: column;
-            justify-content: center;  
-            height: 100vh;  
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 10px;
         }
 
-        button {
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            background-color: rgb(16, 163, 85);
-            color: #000000;
-            cursor: pointer;
-            font-size: 18px;
-        }
-        .container{
-            width: 90%;
-            margin: 0 auto;
+        .container {
+            max-width: 90%;
+            width: 600px;
             padding: 40px;
-            background-image: url(images/anime_tammachat.jpg);
+            background: rgba(0, 0, 0, 0.6) url(images/anime_tammachat.jpg) no-repeat center;
             background-size: cover;
-            background-position: center;
-            background-size: cover;
-            background-position: center;
-            background-blend-mode: darken;
-            background-color: rgba(0, 0, 0,0.2);
-            border-radius: 40px;
-            box-shadow: 0 0 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px white;
+            display: block;
+            margin: 0 auto 20px;
         }
 
         h1 {
-            text-align: center;
             color: #39960d;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
-            
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
-        h2,h3{
-            text-align: center;  /
-            margin: 0;
+        h2, h3 {
             color: #e8e410;
+            margin-bottom: 10px;
         }
+
         .button-container {
             display: flex;
-            justify-content: center;  
-            gap: 20px;
-            box-shadow: 0 0 10px;
-        }
-        button:hover{
-            color: #654e1d;
-            background-color: #2ed314;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
         }
 
-        .header-container {
-            display: flex;
-            flex-direction: column;  
-            align-items: center;  
-            gap: 10px;  
-            margin-bottom: 20px;
-        }
-
-        img {
-            width: 200px;  
-            height: 250px;
+        button {
+            padding: 12px 20px;
             border-radius: 5px;
-            box-shadow: 0 0 10px;
+            border: none;
+            background-color: rgb(16, 163, 85);
+            color: black;
+            cursor: pointer;
+            font-size: 18px;
+            width: 100%;
+            max-width: 250px;
         }
+
+        button:hover {
+            background-color: #2ed314;
+            color: #654e1d;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .profile-pic {
+                width: 120px;
+                height: 160px;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+
     </style>
 </head>
+
 <body>
     <div class="container">
-    <h1>Resume</h1>
-    
-    
-    <div class="header-container">
-        <img src="images/sprite.jpg" alt="Profile Picture">
+        <h1>Resume</h1>
+        <img src="images/sprite.jpg" alt="Profile Picture" class="profile-pic">
         <h2>นาย รชต ปั้นหยัด</h2>
         <h3>ต่ำแหน่ง IT Support</h3>
-    </div>
 
-    
-    <div class="button-container">
-        <a href="Pj_profile.html">
-            <button>Profile</button>
-        </a>
-        <a href="Pj_story.html">
-            <button>Work Experience</button>
-        </a>
-        <a href="Pj.skill.html">
-            <button>Skill</button>
-        </a>
+        <div class="button-container">
+            <a href="Pj_profile.html"><button>Profile</button></a>
+            <a href="Pj_story.html"><button>Work Experience</button></a>
+            <a href="Pj.skill.html"><button>Skill</button></a>
+        </div>
     </div>
-</div>
 </body>
+
 </html>
